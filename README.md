@@ -1,4 +1,4 @@
-# RESPONS I AKHIR PRAKTIKUM PBO
+# RESPONSI AKHIR PRAKTIKUM PBO
 
 ## Deskripsi Program
 
@@ -16,29 +16,16 @@ Pertarungan berlangsung hingga salah satu karakter utama kalah, kemudian program
 ## 2. Struktur 
 Project ResponsiPBO terdiri dari beberapa folder dan file, yaitu:
 
-ResponsiPBO (folder utama)
-
-README.md
-
-screenshot-output.png
-
-src (folder source code)
-
-    responsi (package)
-
-        Karakter.java
-
-        Hero.java
-
-        Enemy.java
-
-        Penyerang.java
-
-        Penyembuh.java
-
-        Main.java
-
-out (folder hasil compile program)
+ResponsiPBO/
+- Karakter.java
+- Hero.java
+- Enemy.java
+- Penyerang.java
+- Penyembuh.java
+- Main.java
+- README.md
+- ssoutput(kedua).png
+- ssoutput(pertama).png
 
 ## 3. Petunjuk Compile dan Run
 
@@ -46,12 +33,13 @@ Buka terminal pada folder utama project, kemudian jalankan perintah berikut.
 
 **Compile:**
 ```bash
-javac -d out src/responsi/Karakter.java src/responsi/Penyerang.java src/responsi/Penyembuh.java src/responsi/Hero.java src/responsi/Enemy.java src/responsi/Main.java
+New-Item -ItemType Directory -Force out
+javac -d out Karakter.java Penyerang.java Penyembuh.java Hero.java Enemy.java Main.java
 ```
 
 **Run:**
 ```bash
-java -cp out responsi.Main
+java -cp out Main
 ```
 
 ## 4. Screenshot Luaran Program
